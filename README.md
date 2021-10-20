@@ -11,8 +11,8 @@
 - CSS
 ## Setup
 
-- Get the link of the repository: `git@github.com:mmatongo/bookstore.git`
-- Clone it as `git@github.com:mmatongo/bookstore.git` on a Terminal
+- Get the link of the repository: `https://github.com/Busiwa24/Bookstore-React-Redux.git
+- Clone it as https://github.com/Busiwa24/Bookstore-React-Redux.git on a Terminal
 
 ## Usage
 
