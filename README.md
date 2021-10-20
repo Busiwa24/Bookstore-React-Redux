@@ -12,7 +12,7 @@
 
 ## Setup
 
-- Get the link of the repository: `https://github.com/Busiwa24/Bookstore-React-Redux.git
+- Get the link of the repository:  https://github.com/Busiwa24/Bookstore-React-Redux.git
 - Clone it as https://github.com/Busiwa24/Bookstore-React-Redux.git on a Terminal
 
 ## Usage
