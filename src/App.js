@@ -35,22 +35,14 @@ const books = [
   },
 ];
 
-const App = () => {
-  const bookList = books.map((books) => <Book key={books.id} info={books} />);
-  return (
-    <Router>
-      <Header />
-      <Switch>
-        <Route exact path="/">
-          { bookList }
-          <NewBook />
-        </Route>
-        <Route path="/categories">
-          <Categories />
-        </Route>
-      </Switch>
-    </Router>
-  );
-};
+const App = () => (
+  <Router>
+    <Header />
+    <Switch>
+      <Route exact path="/" component={Books} />
+      <Route exact path="/categories" component={Categories} />
+    </Switch>
+  </Router>
+);
 
 export default App;
