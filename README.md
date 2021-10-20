@@ -9,6 +9,7 @@
 - React Router
 - JSX
 - CSS
+
 ## Setup
 
 - Get the link of the repository: `https://github.com/Busiwa24/Bookstore-React-Redux.git
