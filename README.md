@@ -40,5 +40,5 @@ Give a ⭐️ if you like this project!
 ## Acknowledgments
 
 - Microverse
-- React and React Router 
+- React and React Router
 - Stack Overflow
