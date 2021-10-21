@@ -1,11 +1,9 @@
-import {
-  BrowserRouter as Router,
+import { BrowserRouter as Router,
   Switch,
   Route,
 } from 'react-router-dom';
 import Header from './components/Nav';
-import Book from './components/Books';
-import NewBook from './components/NewBook';
+import BookList from './components/BookList';
 import Categories from './components/Categories';
 
 const books = [
@@ -34,16 +32,26 @@ const books = [
     chapter: 'Introduction',
   },
 ];
+const BookList = () => (
+  <>
+    <div>
+      {books.map((books) => <Book key={books.id} info={books} />);}
+    </div>
+    <div>
+     <NewBook />
+    </div>
+  </>
+);
+
+export default BookList;
 
 const App = () => {
-  const bookList = books.map((books) => <Book key={books.id} info={books} />);
   return (
     <Router>
       <Header />
       <Switch>
-        <Route exact path="/" component={bookList} />
         <Route exact path="/">
-          <NewBook />
+          <BookList />
         </Route>
         <Route path="/categories">
           <Categories />
@@ -52,5 +60,3 @@ const App = () => {
     </Router>
   );
 };
-
-export default App;
