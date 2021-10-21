@@ -1,19 +1,22 @@
+![](https://img.shields.io/badge/Microverse-blueviolet)
+
 # Bookstore
 
-> This is a React JS application that allows you to add books and track your reading progress.
+> A react JS application that allows you to add books and track your reading progress.
+
+![screenshot](./img/scr.png)
 
 
-## Built with
+## Built With
 
 - JavaScript/React
 - React Router
 - JSX
 - CSS
-
 ## Setup
 
-- Get the link of the repository:  https://github.com/Busiwa24/Bookstore-React-Redux.git
-- Clone it as https://github.com/Busiwa24/Bookstore-React-Redux.git on a Terminal
+- Get the link of the repository: `git@github.com:mmatongo/bookstore.git`
+- Clone it as `git@github.com:mmatongo/bookstore.git` on a Terminal
 
 ## Usage
 
@@ -23,11 +26,10 @@
 
 ## Author
 
-👤 **Busiwa Liuma**
+👤 **Daniel M. Matongo**
 
--GitHub: (https://github.com/Busiwa24) 
--Twitter: (https://twitter.com/busiwaliuma) 
--LinkedIn: (https://www.linkedin.com/in/busiwa-liuma-28385b80/>)
+- GitHub: [@mmatongo](https://github.com/mmatongo)
+- LinkedIn: [Daniel M. Matongo](https://linkedin.com/in/mmatongo)
 
 ## 🤝 Contributing
 
@@ -40,5 +42,5 @@ Give a ⭐️ if you like this project!
 ## Acknowledgments
 
 - Microverse
-- React and React Router 
+- React and React Router documentation
 - Stack Overflow
