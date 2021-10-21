@@ -23,10 +23,11 @@
 
 ## Author
 
-👤 **Daniel M. Matongo**
+👤 **Busiwa Liuma**
 
-- GitHub: [@mmatongo](https://github.com/mmatongo)
-- LinkedIn: [Daniel M. Matongo](https://linkedin.com/in/mmatongo)
+-GitHub: (https://github.com/Busiwa24) 
+-Twitter: (https://twitter.com/busiwaliuma) 
+-LinkedIn: (https://www.linkedin.com/in/busiwa-liuma-28385b80/>)
 
 ## 🤝 Contributing
 
@@ -39,5 +40,5 @@ Give a ⭐️ if you like this project!
 ## Acknowledgments
 
 - Microverse
-- React and React Router documentation
+- React and React Router 
 - Stack Overflow
