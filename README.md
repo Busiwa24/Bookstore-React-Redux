@@ -1,7 +1,21 @@
-# Bookstore
+# Bookstore Management App with React
 
-> This is a React JS application that allows you to add books and track your reading progress.
+> A react JS application that allows you to add books and track your reading progress Redux application tools
 
+![screenshot](./img/localhost_3004_.png) 
+
+# Live Demo 
+Open http://localhost:3000/bookstore to view it in the browser
+
+# Prerequisites
+-Github
+-VS Code or editor 
+-React Redux project 
+
+# Install
+-Github and Github desktop
+-VS code or other editor 
+-Github Action for linter checks
 
 ## Built with
 
@@ -32,6 +46,7 @@
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
+Feel free to raise an issue on https://github.com/Busiwa24/Bookstore-React-Redux.git
 
 ## Show your support
 
@@ -39,6 +54,7 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Microverse
-- React and React Router 
+- Microverse guidelines
+- React and React Router
 - Stack Overflow
+- shout out @Adedomola Shittu and @Ashaka Egerega
