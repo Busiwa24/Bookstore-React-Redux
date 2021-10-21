@@ -57,4 +57,3 @@ Give a ⭐️ if you like this project!
 - Microverse guidelines
 - React and React Router
 - Stack Overflow
-- shout out @Adedomola Shittu and @Ashaka Egerega
