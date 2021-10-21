@@ -1,33 +1,22 @@
-# Bookstore Management App with React
+![](https://img.shields.io/badge/Microverse-blueviolet)
 
-> A react JS application that allows you to add books and track your reading progress Redux application tools
+# Bookstore
 
-![screenshot](./img/localhost_3004_.png) 
+> A react JS application that allows you to add books and track your reading progress.
 
-# Live Demo 
-Open http://localhost:3000/bookstore to view it in the browser
+![screenshot](./img/scr.png)
 
-# Prerequisites
--Github
--VS Code or editor 
--React Redux project 
 
-# Install
--Github and Github desktop
--VS code or other editor 
--Github Action for linter checks
-
-## Built with
+## Built With
 
 - JavaScript/React
 - React Router
 - JSX
 - CSS
-
 ## Setup
 
-- Get the link of the repository:  https://github.com/Busiwa24/Bookstore-React-Redux.git
-- Clone it as https://github.com/Busiwa24/Bookstore-React-Redux.git on a Terminal
+- Get the link of the repository: `git@github.com:mmatongo/bookstore.git`
+- Clone it as `git@github.com:mmatongo/bookstore.git` on a Terminal
 
 ## Usage
 
@@ -37,16 +26,14 @@ Open http://localhost:3000/bookstore to view it in the browser
 
 ## Author
 
-👤 **Busiwa Liuma**
+👤 **Daniel M. Matongo**
 
--GitHub: (https://github.com/Busiwa24) 
--Twitter: (https://twitter.com/busiwaliuma) 
--LinkedIn: (https://www.linkedin.com/in/busiwa-liuma-28385b80/>)
+- GitHub: [@mmatongo](https://github.com/mmatongo)
+- LinkedIn: [Daniel M. Matongo](https://linkedin.com/in/mmatongo)
 
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
-Feel free to raise an issue on https://github.com/Busiwa24/Bookstore-React-Redux.git
 
 ## Show your support
 
@@ -54,7 +41,6 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Microverse guidelines
-- React and React Router
+- Microverse
+- React and React Router documentation
 - Stack Overflow
-- shout out @Adedomola Shittu and @Ashaka Egerega
