@@ -1,22 +1,19 @@
-![](https://img.shields.io/badge/Microverse-blueviolet)
-
 # Bookstore
 
-> A react JS application that allows you to add books and track your reading progress.
-
-![screenshot](./img/scr.png)
+> This is a React JS application that allows you to add books and track your reading progress.
 
 
-## Built With
+## Built with
 
 - JavaScript/React
 - React Router
 - JSX
 - CSS
+
 ## Setup
 
-- Get the link of the repository: `git@github.com:mmatongo/bookstore.git`
-- Clone it as `git@github.com:mmatongo/bookstore.git` on a Terminal
+- Get the link of the repository:  https://github.com/Busiwa24/Bookstore-React-Redux.git
+- Clone it as https://github.com/Busiwa24/Bookstore-React-Redux.git on a Terminal
 
 ## Usage
 
