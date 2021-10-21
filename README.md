@@ -1,7 +1,5 @@
 # Bookstore
-
-> This is a React JS application that allows you to add books and track your reading progress.
-
+> This is a React JS application that allows you to add books and track your reading progress. 
 
 ## Built with
 
