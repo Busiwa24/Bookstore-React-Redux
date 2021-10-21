@@ -1,40 +1,59 @@
-![](https://img.shields.io/badge/Microverse-blueviolet)
-![](https://img.shields.io/badge/HTML-red)
-![](https://img.shields.io/badge/JavaScript-yellow)
-![](https://img.shields.io/badge/React-blue)
+# Bookstore Management App with React
 
-# Bookstore
-A Bookstore single page application made using React and Redux state management.
+> A react JS application that allows you to add books and track your reading progress Redux application tools
 
-# Built with
-  - React
-  - HTML
-  - CSS
-  - Javascript
+![screenshot](./img/localhost_3004_.png) 
 
+# Live Demo 
+Open http://localhost:3000/bookstore to view it in the browser
 
+# Prerequisites
+-Github
+-VS Code or editor 
+-React Redux project 
 
-# Installation 
+# Install
+-Github and Github desktop
+-VS code or other editor 
+-Github Action for linter checks
 
-To run the website locally:
-  - Clone the repo by running `git clone https://github.com/ReshyResh/Bookstore-React-Redux.git`.
-  - Jump to that directory by using `cd Bookstore-React-Redux ` .
-  - Run `npm install` to install dependencies.
-  - Run `npm run start` to launch the live server.
+## Built with
 
-# Authors 👤
-**Robert Baiesita**
-  - Github : [@ReshyResh](https://github.com/ReshyResh/)
-  - LinkedIn: [Robert Baiesita](https://www.linkedin.com/in/reshyresh/)
+- JavaScript/React
+- React Router
+- JSX
+- CSS
 
+## Setup
 
-# 🤝 Contributing
+- Get the link of the repository:  https://github.com/Busiwa24/Bookstore-React-Redux.git
+- Clone it as https://github.com/Busiwa24/Bookstore-React-Redux.git on a Terminal
 
-Feel free to check the [issues page](https://github.com/ReshyResh/Capstone-Javascript-APIs/issues/).
+## Usage
 
-# Show your support
+- Run `npm install` on a Terminal to install the modules
+- Run `yarn start` on a Terminal to start the server 
+- Open [http://localhost:3000/bookstore](http://localhost:3000/bookstore) to view it in the browser.
+
+## Author
+
+👤 **Busiwa Liuma**
+
+-GitHub: (https://github.com/Busiwa24) 
+-Twitter: (https://twitter.com/busiwaliuma) 
+-LinkedIn: (https://www.linkedin.com/in/busiwa-liuma-28385b80/>)
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+Feel free to raise an issue on https://github.com/Busiwa24/Bookstore-React-Redux.git
+
+## Show your support
 
 Give a ⭐️ if you like this project!
 
 ## Acknowledgments
-- This project was inspired by [Microverse](https://www.microverse.org).
+
+- Microverse guidelines
+- React and React Router
+- Stack Overflow

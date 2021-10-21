@@ -33,5 +33,3 @@ const removeBook = async (id) => {
 };
 
 export { addBook, removeBook };
-
-
