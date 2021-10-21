@@ -1,53 +1,11 @@
-import { BrowserRouter as Router,
-  Switch,
-  Route,
-} from 'react-router-dom';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import Header from './components/Nav';
-import BookList from './components/BookList';
 import Categories from './components/Categories';
+import BookList from './components/BookList';
 
-const books = [
-  {
-    id: 1,
-    category: 'Action',
-    name: 'Super woman',
-    author: 'Steven Spielberg',
-    percentage: '45%',
-    chapter: 'Chapter 14',
-  },
-  {
-    id: 2,
-    category: 'Science Fiction',
-    name: 'Journey to Mars',
-    author: 'Peter S. Miller',
-    percentage: '8%',
-    chapter: 'Chapter 3: "Limited Oxygen"',
-  },
-  {
-    id: 3,
-    category: 'Romance',
-    name: 'Somewhere between love and forever',
-    author: 'Mya Bridges',
-    percentage: '5%',
-    chapter: 'Introduction',
-  },
-];
-const BookList = () => (
+const App = () => (
   <>
-    <div>
-      {books.map((books) => <Book key={books.id} info={books} />);}
-    </div>
-    <div>
-     <NewBook />
-    </div>
-  </>
-);
-
-export default BookList;
-
-const App = () => {
-  return (
-    <Router>
+    <BrowserRouter>
       <Header />
       <Switch>
         <Route exact path="/">
@@ -57,6 +15,8 @@ const App = () => {
           <Categories />
         </Route>
       </Switch>
-    </Router>
-  );
-};
+    </BrowserRouter>
+  </>
+);
+
+export default App;
