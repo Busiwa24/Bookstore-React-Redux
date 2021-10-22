@@ -1,30 +1,30 @@
-import React from 'react';
 import './App.css';
+import React from 'react';
 import {
   BrowserRouter as Router,
   Switch,
   Route,
 } from 'react-router-dom';
-import BookContainer from './components/BookContainer';
-import AddBook from './components/AddBook';
 import Navbar from './components/Navbar';
-import store from './redux/store';
+import BookList from './components/BookList';
+import Categories from './components/Categories';
 
-function App() {
-  const books = store.getState();
-  return (
-    <Router>
+const App = () => (
+  <Router>
+    <div className="wrapper border shadow mt-5">
       <Navbar />
       <Switch>
-        <Route exact path="/">
-          <BookContainer books={books} />
-          <AddBook />
-        </Route>
-        <Route path="/categories">
-          Under construction
-        </Route>
+        <div className="container">
+          <Route exact path="/">
+            <BookList />
+          </Route>
+          <Route path="/categories">
+            <Categories />
+          </Route>
+        </div>
       </Switch>
-    </Router>
-  );
-}
+    </div>
+  </Router>
+);
+
 export default App;

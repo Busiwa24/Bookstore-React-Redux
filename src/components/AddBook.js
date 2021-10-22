@@ -1,59 +1,43 @@
+import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
-// import your Action Creators
 import { v4 as uuidv4 } from 'uuid';
-import { useState } from 'react';
 import { addBook } from '../redux/books/books';
-import error from './error';
 
 const AddBook = () => {
   const dispatch = useDispatch();
+  const [title, setTitle] = useState('');
+  const [category, setCategory] = useState('');
 
-  const defState = {
-    id: '',
-    title: '',
-    genre: 'Action',
-  };
-  const [form, setForm] = useState(defState);
-  const handleChange = (e) => {
-    setForm({
-      ...form,
-      [e.target.name]: e.target.value,
-    });
-  };
+  const submitBookToStore = (e) => {
+    e.preventDefault();
+    const newBook = {
+      item_id: uuidv4(),
+      title,
+      category,
+    };
 
-  const submitBookToStore = () => {
-    if (form.title === '') {
-      error('Please fill in the title', 'red');
-    } else {
-      const newBook = {
-        id: uuidv4(), // make sure it's unique
-        title: form.title,
-        category: form.genre,
-      };
-      error('Book added', 'green');
-      dispatch(addBook(newBook));
-      setForm(defState);
-      const parent = document.getElementById('form-add');
-      parent.title.value = '';
-      parent.genre.value = 'Action';
-    }
+    dispatch(addBook(newBook));
+    setTitle('');
+    setCategory('');
   };
 
   return (
-    <div className="form-add">
-      <h2 className="add-book">Add a book </h2>
-      <form id="form-add">
-        <input type="text" name="title" placeholder="Title" onChange={handleChange} />
-        <select defaultValue="DEFAULT" id="genre" name="genre" onChange={handleChange}>
-          <option value="DEFAULT" disabled hidden>Category</option>
-          <option value="Action">Action</option>
-          <option value="Science Fiction">Science Fiction</option>
-          <option value="Economy">Economy</option>
-          <option value="Horror">Horror</option>
-        </select>
-        <button className="add-button" onClick={submitBookToStore} type="button">Add Book</button>
-      </form>
-    </div>
+    <form onSubmit={submitBookToStore} className="row p-3 input">
+      <div className="row input">
+        <h4 className="text-secondary">ADD NEW BOOK</h4>
+        <div className="form">
+          <div className="col-lg-4 p-2">
+            <input className="form-control" placeholder="Add Title" value={title} type="text" onChange={(e) => setTitle(e.target.value)} />
+          </div>
+          <div className="col-lg-4 p-2">
+            <input className="form-control" placeholder="Add Category" value={category} type="text" onChange={(e) => setCategory(e.target.value)} />
+          </div>
+          <div className="col-lg-4 p-2 d-grid">
+            <button type="submit" className="bg-primary text-white"> Add Book</button>
+          </div>
+        </div>
+      </div>
+    </form>
   );
 };
 
