@@ -1,45 +1,25 @@
-import React from 'react';
-import NewBook from './NewBook';
-import Books from './Books';
+import React, { useEffect } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import { getBooks } from '../redux/books/books';
+import AddBook from './AddBook';
+import Book from './Book';
 
-const books = [
-  {
-    id: 1,
-    category: 'Action',
-    name: 'Super woman',
-    author: 'Steven Spielberg',
-    percentage: '45%',
-    chapter: 'Chapter 14',
-  },
-  {
-    id: 2,
-    category: 'Science Fiction',
-    name: 'Journey to Mars',
-    author: 'Peter S. Miller',
-    percentage: '8%',
-    chapter: 'Chapter 3: "Limited Oxygen"',
-  },
-  {
-    id: 3,
-    category: 'Romance',
-    name: 'Somewhere between love and forever',
-    author: 'Mya Bridges',
-    percentage: '5%',
-    chapter: 'Introduction',
-  },
-];
+const BookList = () => {
+  const books = useSelector((state) => state.books);
+  const dispatch = useDispatch();
 
-const BookList = () => (
-  <>
-    <div>
+  useEffect(() => {
+    dispatch(getBooks());
+  }, [dispatch]);
+
+  return (
+    <ul>
       {books.map((book) => (
-        <Books key={book.id} info={books} />
+        <Book key={book.item_id} book={book} />
       ))}
-    </div>
-    <div>
-      <NewBook />
-    </div>
-  </>
-);
+      <AddBook />
+    </ul>
+  );
+};
 
 export default BookList;

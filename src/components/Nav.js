@@ -6,7 +6,7 @@ import {
 const Header = () => (
   <>
     <div className="nav-title">
-      <h1 className="nav-main">Bookstore CMS</h1>
+      <h1 className="nav-main">Bookstore </h1>
       <nav className="nav-links">
         <ul>
           <li>

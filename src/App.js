@@ -1,31 +1,30 @@
+import './App.css';
+import React from 'react';
 import {
   BrowserRouter as Router,
   Switch,
   Route,
 } from 'react-router-dom';
-import { Provider } from 'react-redux';
-
-import Header from './components/Nav';
-import NewBook from './components/NewBook';
+import Navbar from './components/Navbar';
+import BookList from './components/BookList';
 import Categories from './components/Categories';
-import store from './redux/cofigureStore';
-import Store from './components/Store';
 
 const App = () => (
-  <Provider store={store}>
-    <Router>
-      <Header />
+  <Router>
+    <div className="wrapper border shadow mt-5">
+      <Navbar />
       <Switch>
-        <Route exact path="/">
-          <Store />
-          <NewBook />
-        </Route>
-        <Route path="/categories">
-          <Categories />
-        </Route>
+        <div className="container">
+          <Route exact path="/">
+            <BookList />
+          </Route>
+          <Route path="/categories">
+            <Categories />
+          </Route>
+        </div>
       </Switch>
-    </Router>
-  </Provider>
+    </div>
+  </Router>
 );
 
 export default App;

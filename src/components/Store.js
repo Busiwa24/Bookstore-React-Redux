@@ -9,7 +9,6 @@ const Store = () => {
   useEffect(() => {
     dispatch(pullBooks());
   }, []);
-
   let storeFetch = useSelector((store) => store.booksReducer.books);
   if (storeFetch.error) {
     storeFetch = [];

@@ -2,7 +2,7 @@
 
 > A react JS application that allows you to add books and track your reading progress Redux application tools
 
-![screenshot](./img/localhost_3004_.png) 
+![screenshot](./img/localhost_3001_(2).png
 
 # Live Demo 
 Open http://localhost:3000/bookstore to view it in the browser
