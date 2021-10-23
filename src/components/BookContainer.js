@@ -1,15 +1,12 @@
 import { v4 as uuidv4 } from 'uuid';
 import { useEffect } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
+import { useSelector } from 'react-redux';
 import BookInfo from './BookInfo';
 import BookModal from './BookModal';
-import { fetchPostsRequest } from '../redux/books/books';
 import Spinner from './Spinner';
 
 const BookContainer = () => {
-  const dispatch = useDispatch();
   useEffect(() => {
-    dispatch(fetchPostsRequest());
   }, []);
   const arr = useSelector((state) => state.booksReducer.books);
   const bool = useSelector((state) => state.booksReducer.loading);
